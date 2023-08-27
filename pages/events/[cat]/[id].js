@@ -1,22 +1,10 @@
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.sass";
-const inter = Inter({ subsets: ["latin"] });
-import Image from "next/image";
+import SingleEvent from "@/src/components/events/single-event";
 
-function EventPage({ data }) {
-  console.log(data);
-  return (
-    <div className={`${styles.main} ${inter.className}`}>
-      <nav>
-      </nav>
-      <div>
-        <Image src={data.image} width={1000} height={1000} alt={data.title} />
+function EventPage({ data }){
+return(
+<SingleEvent data={data} />
 
-        <h1>{data.title}</h1>
-        <p>{data.description}</p>
-      </div>
-    </div>
-  );
+)
 }
 
 export default EventPage;
