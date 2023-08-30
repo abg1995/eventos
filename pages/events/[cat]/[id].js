@@ -1,4 +1,4 @@
-import SingleEvent from "@/src/components/events/single-event";
+import SingleEvent from "../src/components/events/single-event";
 
 function EventPage({ data }){
 return(
